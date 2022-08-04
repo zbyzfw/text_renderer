@@ -1,7 +1,7 @@
 # Small font_size will make text looks like blured/prydown
 font_size:
-  min: 14
-  max: 23
+  min: 150
+  max: 200
 
 # choose Text color range
 # color boundary is in R,G,B format
@@ -81,7 +81,7 @@ perspective_transform:
 
 blur:
   enable: true
-  fraction: 0.03
+  fraction: 0.10
 
 # If an image is applied blur, it will not be applied prydown
 prydown:

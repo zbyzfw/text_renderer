@@ -1,1 +1,1 @@
-./data/fonts/eng/Hack-Regular.ttf
+./data/fonts/eng/LCDA.ttf
