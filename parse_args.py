@@ -53,8 +53,8 @@ def parse_args():
     # 检查生成图像时字体对字符的支持
     parser.add_argument('--strict', action='store_true', default=False,
                         help="check font supported chars when generating images")
-    #
-    parser.add_argument('--gpu', action='store_true', default=True, help="use CUDA to generate image")
+    # 使用cuda
+    parser.add_argument('--gpu', action='store_true', default=False, help="use CUDA to generate image")
     # 产生图像时使用的进程数量。None的话，使用所有的CPU核数。
     parser.add_argument('--num_processes', type=int, default=4,
                         help="Number of processes to generate image. If None, use all cpu cores")
