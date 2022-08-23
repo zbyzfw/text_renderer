@@ -15,7 +15,7 @@ def parse_args():
                         help='For training a CRNN model, max number of chars in an image'
                              'should less then the width of last CNN layer.')
 
-    parser.add_argument('--img_height', type=int, default=217)
+    parser.add_argument('--img_height', type=int, default=210)
     # 如果是0，则输出图像会有不同的宽度
     parser.add_argument('--img_width', type=int, default=0,
                         help="If 0, output images will have different width")
@@ -43,9 +43,9 @@ def parse_args():
                              'chn: pick continuous chars from corpus'
                              'eng: pick continuous words from corpus, space is included in label')
     #
-    parser.add_argument('--output_dir', type=str, default='./output', help='Images save dir')
-    # 输出图像被曝存在 output_dir/{tag}目录下
-    parser.add_argument('--tag', type=str, default='default', help='output images are saved under output_dir/{tag} dir')
+    parser.add_argument('--output_dir', type=str, default='./output/', help='Images save dir')
+    # 输出图像被保存在 output_dir/{tag}目录下
+    parser.add_argument('--tag', type=str, default='default3', help='output images are saved under output_dir/{tag} dir')
     # 输出未被裁减的图像（cropped 裁剪的） 变换时中间过程的产物
     parser.add_argument('--debug', action='store_true', default=False, help="output uncroped image")
 
